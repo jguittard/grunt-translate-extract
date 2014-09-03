@@ -2,7 +2,7 @@
 * Created by Ma on 25/08/2014.
 */
 /// <reference path="./def/gruntjs/gruntjs.d.ts"/>
-var TranslateExtractor = require("./TranslateExtractor");
+var ParserManager = require("./ParserManager");
 var Options = require("./Options");
 
 // see https://github.com/borisyankov/DefinitelyTyped/blob/master/gruntjs/gruntjs-tests.ts
@@ -14,25 +14,22 @@ function TaskInit(grunt) {
         var options = this.options(new Options());
 
         // init the translation strings extractor
-        var tExt = new TranslateExtractor();
-        tExt.setGrunt(grunt);
-        tExt.setOptions(options);
+        var parser_manager = new ParserManager();
+        parser_manager.setGrunt(grunt);
+        parser_manager.setOptions(options);
 
         // add filPath and pass them to the translation strings extractor.
         this.files.forEach(function (file) {
             file.src.forEach(function (filePath) {
-                tExt.addFile(filePath);
+                parser_manager.addFile(filePath);
             });
         });
 
-        // start parsing the sources files looking for translations strings.
-        tExt.parseFiles();
-
         // save the results of the translation strings extraction.
-        tExt.save();
+        parser_manager.save();
     });
 }
 ;
 
 module.exports = TaskInit;
-//# sourceMappingURL=TaskInit.js.map
+//# sourceMappingURL=translate_extract.js.map

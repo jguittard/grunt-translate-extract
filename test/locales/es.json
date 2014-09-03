@@ -1,0 +1,9 @@
+{
+	"hi": "hi",
+	"what": "what",
+	"del": "del",
+	"single'scaped": "single'scaped",
+	"double\"scaped": "double\"scaped",
+	"single\\'unscaped": "single\\'unscaped",
+	"double\\\"unescaped": "double\\\"unescaped"
+}

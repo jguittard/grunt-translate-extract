@@ -25,7 +25,7 @@ class AngularTranslateParser implements TranslateEntryParser{
      * @param text the raw text of the translate entry.
      * @return TranslateEntry.
      */
-    parseTranslateEntry(filename:string, lineNum:number, text:string):TranslateEntry{
+    parseMatch(match:RegExpExecArray):TranslateEntry{
         return {key:"test",text:"this is sparta"};
     }
 }

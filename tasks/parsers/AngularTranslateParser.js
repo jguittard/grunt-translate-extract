@@ -18,7 +18,7 @@ var AngularTranslateParser = (function () {
     * @param text the raw text of the translate entry.
     * @return TranslateEntry.
     */
-    AngularTranslateParser.prototype.parseTranslateEntry = function (filename, lineNum, text) {
+    AngularTranslateParser.prototype.parseMatch = function (match) {
         return { key: "test", text: "this is sparta" };
     };
     return AngularTranslateParser;

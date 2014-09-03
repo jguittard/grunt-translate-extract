@@ -4,6 +4,7 @@
 
 import Parser = require("./Parser");
 import TranslateEntry = require("./../TranslationEntry");
+import utils = require("./../Utils");
 
 
 class PHPGettextParser implements Parser{
@@ -30,6 +31,9 @@ class PHPGettextParser implements Parser{
 
     gettextRegexp = /(->\s*|\s+)_\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
 
+    wordpressRegexp = /(->\s*|\s+)__\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
+    wordpressEchoRegexp = /(->\s*|\s+)_e\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
+
     /**
      * Returns the regular expression that delimits each TranslationEntry.
      * Note that it returns a array with one or more regexps.
@@ -48,8 +52,11 @@ class PHPGettextParser implements Parser{
      * @param text the raw text of the translate entry.
      * @return TranslateEntry.
      */
-    parseTranslateEntry(filename:string, lineNum:number, text:string):TranslateEntry{
-        return {key:"test",text:"this is sparta"};
+    parseMatch(match:RegExpExecArray):TranslateEntry{
+        var text = utils.escapeLiteral(match[2]);
+        if(text === false)
+            throw "Unexpected regular expression match / "+match[0]+" /";
+        return {key:text,text:text};
     }
 }
 

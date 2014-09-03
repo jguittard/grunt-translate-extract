@@ -23,7 +23,7 @@ interface TranslateEntryParser{
      * @param text the raw text of the translate entry.
      * @return TranslationEntry.
      */
-    parseTranslateEntry(filename:string, lineNum:number, text:string):TranslateEntry;
+    parseMatch(match:RegExpExecArray):TranslateEntry;
 
 
 }

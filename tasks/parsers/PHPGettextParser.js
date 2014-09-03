@@ -1,6 +1,8 @@
 /**
 * Created by Ma on 16/08/2014.
 */
+var utils = require("./../Utils");
+
 var PHPGettextParser = (function () {
     function PHPGettextParser() {
         /**
@@ -22,6 +24,8 @@ var PHPGettextParser = (function () {
         */
         this.referenceRegexp = /(->\s*|\s+)functionName\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
         this.gettextRegexp = /(->\s*|\s+)_\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
+        this.wordpressRegexp = /(->\s*|\s+)__\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
+        this.wordpressEchoRegexp = /(->\s*|\s+)_e\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
     }
     /**
     * Returns the regular expression that delimits each TranslationEntry.
@@ -40,8 +44,11 @@ var PHPGettextParser = (function () {
     * @param text the raw text of the translate entry.
     * @return TranslateEntry.
     */
-    PHPGettextParser.prototype.parseTranslateEntry = function (filename, lineNum, text) {
-        return { key: "test", text: "this is sparta" };
+    PHPGettextParser.prototype.parseMatch = function (match) {
+        var text = utils.escapeLiteral(match[2]);
+        if (text === false)
+            throw "Unexpected regular expression match / " + match[0] + " /";
+        return { key: text, text: text };
     };
     return PHPGettextParser;
 })();
