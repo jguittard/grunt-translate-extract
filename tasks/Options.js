@@ -9,7 +9,7 @@ var Options = (function () {
         * Default value = ["en", "es"];
         * @type {string[]}
         */
-        this.locales = ["en", "es"];
+        this.locales = ['en', 'es', 'fr', 'de'];
         /**
         * Directory where the translation files will be generated.
         * Default value = "./locales";

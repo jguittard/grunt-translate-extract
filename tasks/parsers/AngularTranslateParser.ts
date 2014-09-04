@@ -3,6 +3,7 @@
  */
 import TranslateEntryParser = require("./Parser");
 import TranslateEntry = require("./../TranslationEntry");
+import utils = require("./../Utils");
 
 
 class AngularTranslateParser implements TranslateEntryParser{
@@ -13,7 +14,7 @@ class AngularTranslateParser implements TranslateEntryParser{
      * @return RegExp[] ie:[ /\[\[.+\]\]/g , /\{\{(.+?)\}\}/g]
      */
     getRegexpList():RegExp[]{
-        return [  /\{\{(.+?)\}\}/g ];
+        return [  /\{\{\s*(.+?)\s*\|\s*translate\s*\}\}/g ];
     }
 
 
@@ -26,7 +27,10 @@ class AngularTranslateParser implements TranslateEntryParser{
      * @return TranslateEntry.
      */
     parseMatch(match:RegExpExecArray):TranslateEntry{
-        return {key:"test",text:"this is sparta"};
+        var text = utils.escapeLiteral(match[1]);
+        if(text === false)
+            text = match[1];
+        return {key:text,text:text};
     }
 }
 export = AngularTranslateParser;

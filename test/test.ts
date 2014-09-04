@@ -7,6 +7,7 @@ import Options = require("../tasks/Options");
 
 // Merge task-specific and/or target-specific options with these defaults.
 var options:Options = new Options();
+console.log(options);
 var grunt:IGrunt = require('grunt');
 
 // init the translation strings extractor
@@ -19,5 +20,11 @@ pm.addFile("C:/Users/Ma/Dropbox/Projects/grunt-translate-extract/test/srcFiles/t
 
 pm.save();
 
-
+var x = {
+    locales: [ 'en', 'es' ],
+    outputDir: './locales',
+    builtInParser: 'gettextPHP',
+    customParser: null,
+    errorOnDuplicatedKeys: true
+}
 

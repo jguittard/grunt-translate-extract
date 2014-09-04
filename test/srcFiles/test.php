@@ -7,3 +7,7 @@
 <p><?php echo _("double\"scaped"), " ", $name; ?></p>
 <p><?php echo $t->_("single\'unscaped"), " ", $name; ?></p>
 <p><?php echo _('double\"unescaped'), " ", $name; ?></p>
+
+{{ this is a text | translate}}
+{{ this is other text | translate}}
+{{ this is a text }}

@@ -1,3 +1,5 @@
+var utils = require("./../Utils");
+
 var AngularTranslateParser = (function () {
     function AngularTranslateParser() {
     }
@@ -7,7 +9,7 @@ var AngularTranslateParser = (function () {
     * @return RegExp[] ie:[ /\[\[.+\]\]/g , /\{\{(.+?)\}\}/g]
     */
     AngularTranslateParser.prototype.getRegexpList = function () {
-        return [/\{\{(.+?)\}\}/g];
+        return [/\{\{\s*(.+?)\s*\|\s*translate\s*\}\}/g];
     };
 
     /**
@@ -19,7 +21,10 @@ var AngularTranslateParser = (function () {
     * @return TranslateEntry.
     */
     AngularTranslateParser.prototype.parseMatch = function (match) {
-        return { key: "test", text: "this is sparta" };
+        var text = utils.escapeLiteral(match[1]);
+        if (text === false)
+            text = match[1];
+        return { key: text, text: text };
     };
     return AngularTranslateParser;
 })();

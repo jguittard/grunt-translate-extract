@@ -47,3 +47,4 @@ export function escapeLiteral(unescapedLiteral:string):any{
         return false;
     }
 }
+

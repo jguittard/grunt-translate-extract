@@ -15,7 +15,7 @@ class Options{
      * Default value = ["en", "es"];
      * @type {string[]}
      */
-    locales:string[] = ["en", "es"];
+    locales:string[] = [ 'en', 'es' , 'fr', 'de'];
 
     /**
      * Directory where the translation files will be generated.

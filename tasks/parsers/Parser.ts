@@ -4,7 +4,7 @@
 import TranslateEntry = require("./../TranslationEntry");
 
 /**
- * Classes that implements this
+ * Implements this interface to create a parser to match and extract translatable string.
  */
 interface TranslateEntryParser{
 
