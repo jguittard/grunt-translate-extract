@@ -2,41 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9ab000-1282-4ac7-8720-caa1be4c37f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/ParserManager.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/parsers/WordpressParser.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/translate_extract.js.map" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\TaskInit.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\TranslateExtractor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\TranslateExtractor.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\TranslateExtractor.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\old\i18nTemplates.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\old\translate_extract.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\old\translatorManager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\locales\en_locales.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\locales\es_locales.json" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\TaskInit.js" afterPath="$PROJECT_DIR$/tasks/translate_extract.js" />
-      <change type="MOVED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\tasks\TaskInit.ts" afterPath="$PROJECT_DIR$/tasks/translate_extract.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.js.map" afterPath="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.js" afterPath="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.ts" afterPath="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/Options.js.map" afterPath="$PROJECT_DIR$/tasks/Options.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/Options.js" afterPath="$PROJECT_DIR$/tasks/Options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/Options.ts" afterPath="$PROJECT_DIR$/tasks/Options.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.js.map" afterPath="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.js" afterPath="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts" afterPath="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/parsers/Parser.ts" afterPath="$PROJECT_DIR$/tasks/parsers/Parser.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/ParserList.js.map" afterPath="$PROJECT_DIR$/tasks/ParserList.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/ParserList.js" afterPath="$PROJECT_DIR$/tasks/ParserList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/ParserList.ts" afterPath="$PROJECT_DIR$/tasks/ParserList.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/Utils.js.map" afterPath="$PROJECT_DIR$/tasks/Utils.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/Utils.js" afterPath="$PROJECT_DIR$/tasks/Utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/Utils.ts" afterPath="$PROJECT_DIR$/tasks/Utils.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/srcFiles/gettextPHP_0.php" />
+      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\locales\en.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\locales\es.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\srcFiles\test.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\srcFiles\test.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Ma\Dropbox\Projects\grunt-translate-extract\test\srcFiles\test2.html" afterPath="$PROJECT_DIR$/test/srcFiles/angularTransalte_0.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.js.map" afterPath="$PROJECT_DIR$/test/test.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.js" afterPath="$PROJECT_DIR$/test/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/srcFiles/test.php" afterPath="$PROJECT_DIR$/test/srcFiles/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.ts" afterPath="$PROJECT_DIR$/test/test.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/translate_extract.js.map" afterPath="$PROJECT_DIR$/tasks/translate_extract.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/translate_extract.js" afterPath="$PROJECT_DIR$/tasks/translate_extract.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/translate_extract.ts" afterPath="$PROJECT_DIR$/tasks/translate_extract.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="grunt-translate-extract.iws" />
@@ -59,38 +38,7 @@
     <favorites_list name="grunt-translate-extract" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PHPGettextParser.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1156">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="62" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordpressParser.ts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/parsers/WordpressParser.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="527">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParserList.ts" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/ParserList.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05414013" vertical-offset="0" max-vertical-offset="942">
-              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -128,22 +76,26 @@
         <option value="$PROJECT_DIR$/tasks/translate-extract.ts" />
         <option value="$PROJECT_DIR$/tasks/TranslateExtract.ts" />
         <option value="$PROJECT_DIR$/tasks/parsers/TranslationEntry.ts" />
-        <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/tasks/parsers/AngularTranslateParser.ts" />
         <option value="$PROJECT_DIR$/test/locales/es.json" />
         <option value="$PROJECT_DIR$/tasks/Options.ts" />
         <option value="$PROJECT_DIR$/tasks/TranslateExtractor.ts" />
         <option value="$PROJECT_DIR$/tasks/ParserManager.js.map" />
         <option value="$PROJECT_DIR$/tasks/TaskInit.ts" />
-        <option value="$PROJECT_DIR$/tasks/translate_extract.ts" />
         <option value="$PROJECT_DIR$/test/test.ts" />
         <option value="$PROJECT_DIR$/tasks/parsers/Parser.ts" />
         <option value="$PROJECT_DIR$/tasks/Utils.ts" />
         <option value="$PROJECT_DIR$/test/locales/en.json" />
-        <option value="$PROJECT_DIR$/test/srcFiles/test.php" />
         <option value="$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts" />
         <option value="$PROJECT_DIR$/tasks/parsers/WordpressParser.ts" />
         <option value="$PROJECT_DIR$/tasks/ParserList.ts" />
+        <option value="$PROJECT_DIR$/test/test.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tasks/translate_extract.ts" />
+        <option value="$PROJECT_DIR$/test/srcFiles/test.js" />
+        <option value="$PROJECT_DIR$/test/srcFiles/angularTransalte_0.html" />
+        <option value="$PROJECT_DIR$/test/srcFiles/test.php" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
       </list>
     </option>
   </component>
@@ -160,9 +112,6 @@
             <targets>
               <target value="tests" />
             </targets>
-          </GruntMultiTaskState>
-          <GruntMultiTaskState>
-            <name>i18nTemplates</name>
           </GruntMultiTaskState>
           <GruntMultiTaskState>
             <name>jshint</name>
@@ -240,92 +189,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test.ts" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="srcFiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locales" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grunt-translate-extract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parsers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -342,6 +205,7 @@
     <property name="recentsLimit" value="5" />
     <property name="LayoutCode.rearrangeEntriesTypeScript" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -433,12 +297,13 @@
     <frame x="70" y="-8" width="1858" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20647995" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20647995" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23450413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -446,7 +311,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -482,6 +346,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tasks/ParserList.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="544">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
@@ -494,7 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="527">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,11 +372,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="544">
           <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/srcFiles/test.php">
+    <entry file="file://$PROJECT_DIR$/test/srcFiles/gettextPHP_0.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
           <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
@@ -587,7 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="374">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="629">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="612">
           <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,24 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/srcFiles/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/TranslationEntry.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/translate_extract.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11888112" vertical-offset="0" max-vertical-offset="715">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -706,14 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55771565" vertical-offset="0" max-vertical-offset="823">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -739,34 +583,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.76" vertical-offset="0" max-vertical-offset="1615">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/ParserManager.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
-          <caret line="0" column="96" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
-        </state>
-      </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/translate_extract.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="731">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/locales/en.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
+          <caret line="0" column="96" selection-start-line="0" selection-start-column="96" selection-end-line="0" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -784,20 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8070444" vertical-offset="0" max-vertical-offset="850">
           <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47569954" vertical-offset="204" max-vertical-offset="1343">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/srcFiles/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17525773" vertical-offset="0" max-vertical-offset="679">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -822,26 +631,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts">
+    <entry file="file://$PROJECT_DIR$/tasks/ParserList.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="62" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.05414013" vertical-offset="0" max-vertical-offset="942">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/parsers/WordpressParser.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+        <state vertical-scroll-proportion="0.018046709" vertical-offset="0" max-vertical-offset="942">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/parsers/PHPGettextParser.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13375796" vertical-offset="129" max-vertical-offset="1122">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/translate_extract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1364366" vertical-offset="0" max-vertical-offset="697">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/translate_extract.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2728732" vertical-offset="0" max-vertical-offset="731">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/srcFiles/angularTransalte_0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2562814" vertical-offset="0" max-vertical-offset="597">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/srcFiles/gettextPHP_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29565218" vertical-offset="0" max-vertical-offset="575">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24444444" vertical-offset="928" max-vertical-offset="2737">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locales/gettextPHP/es.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22780569" vertical-offset="0" max-vertical-offset="597">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locales/gettextPHP/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22780569" vertical-offset="0" max-vertical-offset="597">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locales/angularTranslate/es.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.085427135" vertical-offset="0" max-vertical-offset="597">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/ParserList.ts">
+    <entry file="file://$PROJECT_DIR$/locales/angularTranslate/en.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05414013" vertical-offset="0" max-vertical-offset="942">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.085427135" vertical-offset="0" max-vertical-offset="597">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82985556" vertical-offset="350" max-vertical-offset="1445">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79133224" vertical-offset="0" max-vertical-offset="623">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>

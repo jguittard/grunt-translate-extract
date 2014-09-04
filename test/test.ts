@@ -16,7 +16,7 @@ pm.setGrunt(grunt);
 pm.setOptions(options);
 
 // add filPath and pass them to the translation strings extractor.
-pm.addFile("C:/Users/Ma/Dropbox/Projects/grunt-translate-extract/test/srcFiles/test.php");
+pm.addFile("C:/Users/Ma/Dropbox/Projects/grunt-translate-extract/test/srcFiles/gettextPHP_0.php");
 
 pm.save();
 

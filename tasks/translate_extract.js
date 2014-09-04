@@ -6,10 +6,10 @@ var ParserManager = require("./ParserManager");
 var Options = require("./Options");
 
 // see https://github.com/borisyankov/DefinitelyTyped/blob/master/gruntjs/gruntjs-tests.ts
-function TaskInit(grunt) {
+function translate_extract(grunt) {
     // Please see the Grunt documentation for more information regarding task
     // creation: http://gruntjs.com/creating-tasks
-    grunt.registerMultiTask('taskName', 'task description', function () {
+    grunt.registerMultiTask('translate_extract', 'extracts translatable strings from source files', function () {
         // Merge task-specific and/or target-specific options with these defaults.
         var options = this.options(new Options());
 
@@ -31,5 +31,5 @@ function TaskInit(grunt) {
 }
 ;
 
-module.exports = TaskInit;
+module.exports = translate_extract;
 //# sourceMappingURL=translate_extract.js.map

@@ -66,9 +66,9 @@ Default value: `gettextPHP`
 
 The parser used to match the translation strings.
 List of built in parser
-1. `gettextPHP` => matches php gettext functions like `_("text to translate")` or `$object->_("text to translate")`
-2. `wordpress` => matches php wordpress functions like `__("text to translate")` or `_e("text to translate")`
-3. `angularTranslate` => matches angular translate declarations using the translate filter like `{{ key | translate}}`
+ 1. `gettextPHP` => matches php gettext functions like `_("text to translate")` or `$object->_("text to translate")`
+ 2. `wordpress` => matches php wordpress functions like `__("text to translate")` or `_e("text to translate")`
+ 3. `angularTranslate` => matches angular translate declarations using the translate filter like `{{ key | translate}}`
 
 #### options.customParser
 Type: `Object`
@@ -124,8 +124,8 @@ grunt.initConfig({
     },
     files: {
       src: ["src/**/*.php"]
-    },
-  },
+    }
+  }
 });
 ```
 
@@ -136,13 +136,15 @@ In this example, custom options are used to do something else with whatever else
 grunt.initConfig({
   translate_extract: {
     options: {
-      separator: ": ",
-      punctuation: " !!!",
+      locales: [ "en", "es"],
+      outputDir: "./locales",
+      builtInParser: "angularTranslate",
+      errorOnDuplicatedKeys: false
     },
     files: {
-      "dest/default_options": ["src/testing", "src/123"],
-    },
-  },
+      src: ["src/**/*.js"]
+    }
+  }
 });
 ```
 

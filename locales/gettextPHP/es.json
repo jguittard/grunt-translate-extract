@@ -5,8 +5,5 @@
 	"single'scaped": "single'scaped",
 	"double\"scaped": "double\"scaped",
 	"single\\'unscaped": "single\\'unscaped",
-	"double\\\"unescaped": "double\\\"unescaped",
-	"this is a text": "esto estra traducido",
-	"this is other text": "this is other text",
-	"test": "this is sparta"
+	"double\\\"unescaped": "double\\\"unescaped"
 }
