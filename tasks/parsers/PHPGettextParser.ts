@@ -26,13 +26,9 @@ class PHPGettextParser implements Parser{
      *
      * @type {RegExp}
      */
-    referenceRegexp = /(->\s*|\s+)functionName\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
-
-
     gettextRegexp = /(->\s*|\s+)_\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
 
-    wordpressRegexp = /(->\s*|\s+)__\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
-    wordpressEchoRegexp = /(->\s*|\s+)_e\(\s*("(\\.|[^"])*"|'(\\.|[^'])*')/gm;
+    keyValue = false;
 
     /**
      * Returns the regular expression that delimits each TranslationEntry.
@@ -41,6 +37,16 @@ class PHPGettextParser implements Parser{
      */
     getRegexpList():RegExp[]{
         return [this.gettextRegexp];
+    }
+
+
+    /**
+     * Enable to split the matched string in key | value;
+     * This is a hack to enable work with functions like phpgetext _("key | default text to translate")
+     * So it is easy to make changes to the text without change the key.
+     */
+    aneableKeyValue(){
+        this.keyValue = true;
     }
 
 
@@ -56,7 +62,14 @@ class PHPGettextParser implements Parser{
         var text = utils.escapeLiteral(match[2]);
         if(text === false)
             throw "Unexpected regular expression match / "+match[0]+" /";
-        return {key:text,text:text};
+        if(!this.keyValue)
+            return {"key":text,"text":text};
+
+        var pos = text.indexOf("|");
+        if(pos > 0)
+            return {"key":text.substr(0,pos),"text":text.substr(pos+1)}
+        else
+            return {"key":text,"text":text};
     }
 }
 

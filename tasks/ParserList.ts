@@ -18,6 +18,11 @@ var ParserList = {
     gettextPHP:function():Parser{
         return new PHPGettextParser();
     },
+    gettextPHP_KV:function():Parser{
+        var p = new PHPGettextParser();
+        p.aneableKeyValue();
+        return p;
+    },
     wordpress:function():Parser{
         return new WordpressParser();
     },

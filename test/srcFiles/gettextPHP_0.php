@@ -1,6 +1,8 @@
 <?php
 
-echo $t->_("hi"), " ", $name;
+
+ _("key");
+echo $t->_("hi | this is the text"), " ", $name;
 echo _("what"), " ", $name;
 echo $t->_('del'), " ", $name;
 echo $t->_('single\'scaped'), " ", $name;

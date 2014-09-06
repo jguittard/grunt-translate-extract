@@ -24,24 +24,21 @@ sourcesDir:string = null;
 var ParserManager = (function () {
     function ParserManager() {
         /**
+        * Contains all te file names.
+        */
+        this.files = [];
+        /**
         * Stores a reference to each translation entry found by the parser.
         * @type {{key: string}}
         */
-        this.entriesRecord = {
-            "key": "filename"
-        };
+        this.entriesRecord = {};
         /**
         * Object Used to generate the translation files, this object contains
         * all the localised string. the json translation files are encoded
         * decoded into this object.
         * @type {{localeName: {key1: string, key2: string}}}
         */
-        this.locales = {
-            "eg: localeName": {
-                "key1": "translate this text",
-                "key2": "hello world"
-            }
-        };
+        this.locales = {};
     }
     /**
     * Sets the grunt task runner object.
@@ -126,6 +123,7 @@ var ParserManager = (function () {
             return false;
 
         // Read and return the file's source.
+        this.files.push(path);
         this.parseFile(this.grunt.file.read(path), path);
     };
 
@@ -193,6 +191,7 @@ var ParserManager = (function () {
     ParserManager.prototype.save = function () {
         this.readLocaleFiles();
         this.saveLocales();
+        console.log("Parsed " + this.files.length + " files. Found " + Object.keys(this.entriesRecord).length + " translation entries.");
     };
 
     /**

@@ -152,4 +152,5 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+0.0.1 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.
 0.0.1 first beta released with support for php gettext , wordpress and angular-translate. no hard test yet.

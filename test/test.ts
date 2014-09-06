@@ -7,7 +7,7 @@ import Options = require("../tasks/Options");
 
 // Merge task-specific and/or target-specific options with these defaults.
 var options:Options = new Options();
-console.log(options);
+options.builtInParser = "gettextPHP_KV";
 var grunt:IGrunt = require('grunt');
 
 // init the translation strings extractor

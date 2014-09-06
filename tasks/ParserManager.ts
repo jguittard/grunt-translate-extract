@@ -44,12 +44,18 @@ class ParserManager {
      */
     parser:Parser;
 
+
+    /**
+     * Contains all te file names.
+     */
+    files:string[]=[];
+
     /**
      * Stores a reference to each translation entry found by the parser.
      * @type {{key: string}}
      */
     entriesRecord={
-        "key":"filename"
+//        "key":"filename"
     };
 
 
@@ -60,10 +66,10 @@ class ParserManager {
      * @type {{localeName: {key1: string, key2: string}}}
      */
     locales:any = {
-        "eg: localeName": {
-            "key1": "translate this text",
-            "key2": "hello world"
-        }
+//        "eg: localeName": {
+//            "key1": "translate this text",
+//            "key2": "hello world"
+//        }
     };
 
     /**
@@ -156,6 +162,7 @@ class ParserManager {
         if (!this.grunt.file.exists(path))
             return false;
         // Read and return the file's source.
+        this.files.push(path);
         this.parseFile(this.grunt.file.read(path),path);
     }
 
@@ -224,6 +231,7 @@ class ParserManager {
     public save(){
         this.readLocaleFiles()
         this.saveLocales();
+        console.log("Parsed "+ this.files.length +" files. Found " + Object.keys(this.entriesRecord).length + " translation entries.")
     }
 
 
