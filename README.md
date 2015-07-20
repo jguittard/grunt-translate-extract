@@ -1,23 +1,25 @@
 # grunt-translate-extract
 
-> extracts translatable strings from source files.
+`grunt-translate-extract` helps developers with the internationalization off their code. It search for translatable
+string in the source code and generate a json file for each language.
+
+
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
-
 ```shell
 npm install grunt-translate-extract --save-dev
 ```
-
-Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+Enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
 grunt.loadNpmTasks('grunt-translate-extract');
 ```
 
 ## The "translate_extract" task
+
+
 
 ### Overview
 In your project's Gruntfile, add a section named `translate_extract` to the data object passed into `grunt.initConfig()`.
@@ -26,30 +28,30 @@ In your project's Gruntfile, add a section named `translate_extract` to the data
 grunt.initConfig({
   translate_extract: {
     options: {
-      locales: [ "en", "es", "en_US" , ... ],
-      outputDir: "./locales",
+      output: [ "en", "es" , "fr", "de"],
+      outputDir: "./output",
       builtInParser: "gettextPHP",
       customParser: null,
       errorOnDuplicatedKeys: true
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+    files: {
+      src: ["src/**/*.php"]
+    }
+  }
 });
 ```
 
 ### Options
 
-#### options.locales
+#### options.output
 Type: `String Array`
 Default value: `[ "en", "es" , "fr", "de"]`
 
-An Array of the languages or 'locales' to use .
+An Array of the languages or 'output' to use .
 
 #### options.outputDir
 Type: `String`
-Default value: `./locales`
+Default value: `./output`
 
 Directory where the locale files will be stored. `files.dest` is ignored by this task and can be omitted.
 
@@ -57,7 +59,7 @@ Directory where the locale files will be stored. `files.dest` is ignored by this
 Type: `bolean`
 Default value: `true`
 
-If `true` the system will throw and error if finds two translatable string with the same key, if `false`
+If `true` the system will throw and error if finds two translatable string with the same msgid, if `false`
 the two string will be considered the same an treated as a single entry .
 
 #### options.builtInParser
@@ -66,9 +68,9 @@ Default value: `gettextPHP`
 
 The parser used to match the translation strings.
 List of built in parser
- 1. `gettextPHP` => matches php gettext functions like `_("text to translate")` or `$object->_("text to translate")`
- 2. `wordpress` => matches php wordpress functions like `__("text to translate")` or `_e("text to translate")`
- 3. `angularTranslate` => matches angular translate declarations using the translate filter like `{{ key | translate}}`
+ . `gettextPHP` => matches php gettext functions like `_("text to translate")` or `$object->_("text to translate")`
+ . `wordpress` => matches php wordpress functions like `__("text to translate")` or `_e("text to translate")`
+ . `angularTranslate` => matches angular translate declarations using the translate filter like `{{ msgid | translate}}`
 
 #### options.customParser
 Type: `Object`
@@ -83,7 +85,7 @@ interface declaration written in typescript.
 /**
  * Implements this interface to create a parser to match and extract translatable string.
  */
-interface TranslateEntryParser{
+interface Parser{
 
     /**
      * Returns a list of regular expression that delimits each TranslationEntry.
@@ -93,11 +95,11 @@ interface TranslateEntryParser{
 
 
     /**
-     * Gets the raw text of one TranslationEntry and return its key and text.
-     * ie: gets "title : this is the title" and returns a new TranslationEntry{key:"title",text:"this is the title"}.
+     * Gets the raw text of one TranslationEntry and return its msgid and msgstr.
+     * ie: gets "title : this is the title" and returns a new TranslationEntry{msgid:"title",msgstr:"this is the title"}.
      * @param filename current file name.
      * @param lineNum current line number.
-     * @param text the raw text of the translate entry.
+     * @param msgstr the raw msgstr of the translate entry.
      * @return TranslationEntry.
      */
     parseMatch(match:RegExpExecArray):TranslateEntry;
@@ -116,8 +118,8 @@ In this example, the default options are used to do something with whatever. So 
 grunt.initConfig({
   translate_extract: {
     options: {
-      locales: [ "en", "es" , "fr", "de"],
-      outputDir: "./locales",
+      output: [ "en", "es" , "fr", "de"],
+      outputDir: "./output",
       builtInParser: "gettextPHP",
       customParser: null,
       errorOnDuplicatedKeys: true
@@ -136,8 +138,8 @@ In this example, custom options are used to do something else with whatever else
 grunt.initConfig({
   translate_extract: {
     options: {
-      locales: [ "en", "es"],
-      outputDir: "./locales",
+      output: [ "en", "es"],
+      outputDir: "./output",
       builtInParser: "angularTranslate",
       errorOnDuplicatedKeys: false
     },

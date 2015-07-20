@@ -12,20 +12,26 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        jshint: {
-            all: [
-                'Gruntfile.js',
-                'tasks/*.js',
-                '<%= nodeunit.tests %>'
-            ],
-            options: {
-                jshintrc: '.jshintrc'
-            }
-        },
+
 
         // Before generating any new files, remove any previously-created files.
         clean: {
-            tests: ['tmp']
+            tests: ['libs/*']
+        },
+
+        ts: {
+            options: {
+                module: 'commonjs', //node.js module system
+                target: 'es5', //or es3
+                sourceMap: false,
+                declaration: false
+            },
+            app : {
+                sourceMap: false,
+                reference:"src/tasks/def/translate-extract.d.ts",
+                src: ["src/**/*.ts"],
+                outDir:"libs/"
+            }
         },
 
         // Configuration to be run (and then tested).
@@ -33,26 +39,39 @@ module.exports = function (grunt) {
             getextPhp: {
                 options:  {
                     locales: [ "en", "es"],
-                    outputDir: "./locales/gettextPHP",
+                    outputDir: "testFiles/locales/gettextPHP",
                     builtInParser: "gettextPHP",
                     errorOnDuplicatedKeys: true
                 },
                 files: {
-                    src: ['test/srcFiles/**/*.php']
+                    src: ['testFiles/**/*.php']
                 }
             },
             angularTransalte: {
                 options: {
                     locales: [ "en", "es"],
-                    outputDir: "./locales/angularTranslate",
+                    outputDir: "testFiles/locales/angularTranslate",
                     builtInParser: "angularTranslate",
                     errorOnDuplicatedKeys: true
                 },
                 files: {
-                    src: ["test/srcFiles/**/*.html"]
+                    src: ["testFiles/**/*.html"]
                 }
             }
         },
+
+
+
+        watch: {
+            scripts: {
+                files: ['**/*.ts'],
+                tasks: ['ts'],
+                options: {
+                    spawn: false
+                }
+            }
+        },
+
 
         // Unit tests.
         nodeunit: {
@@ -61,19 +80,18 @@ module.exports = function (grunt) {
 
     });
 
-    // Actually load this plugin's task(s).
-    grunt.loadTasks('tasks');
 
     // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    grunt.loadNpmTasks("grunt-ts");
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Whenever the "test" task is run, first clean the "tmp" dir, then run this
     // plugin's task(s), then test the result.
-    grunt.registerTask('test', ['clean', 'translate_extract']);
+    //grunt.registerTask('test', ['clean', 'translate_extract']);
 
     // By default, lint and run all tests.
-    grunt.registerTask('default', ['jshint', 'test']);
+    grunt.registerTask('default', ["clean",'ts','watch']);
 
 };

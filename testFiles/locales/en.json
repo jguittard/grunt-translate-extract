@@ -1,0 +1,121 @@
+{
+	"msgid": {
+		"msgid": "msgid",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:4"
+	},
+	"hi | this is the text": {
+		"msgid": "hi | this is the text",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:5"
+	},
+	"what": {
+		"msgid": "what",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:6"
+	},
+	"what2": {
+		"msgid": "what2",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:7"
+	},
+	"del": {
+		"msgid": "del",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:8"
+	},
+	"single'scaped": {
+		"msgid": "single'scaped",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:9"
+	},
+	"double\"scaped": {
+		"msgid": "double\"scaped",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:10"
+	},
+	"single\\'unscaped": {
+		"msgid": "single\\'unscaped",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:11"
+	},
+	"double\\\"unescaped": {
+		"msgid": "double\\\"unescaped",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:12"
+	},
+	"dsdd": {
+		"msgid": "dsdd",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:22"
+	},
+	"gfghg": {
+		"msgid": "gfghg",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:38"
+	},
+	"Have a nice day": {
+		"msgid": "Have a nice day",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:41"
+	},
+	"Label1": {
+		"msgid": "Label1",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:44"
+	},
+	"File": {
+		"msgid": "File",
+		"msgstr": null,
+		"msgid_plural": "Files",
+		"msgctxt": null,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:48"
+	},
+	"Labe2": {
+		"msgid": "Labe2",
+		"msgstr": null,
+		"msgid_plural": null,
+		"msgctxt": "module2",
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:45"
+	},
+	"$msgid1": {
+		"msgid": "$msgid1",
+		"msgstr": null,
+		"msgid_plural": "string $msgid3",
+		"msgctxt": false,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:16"
+	},
+	"$msgid9": {
+		"msgid": "$msgid9",
+		"msgstr": null,
+		"msgid_plural": "string $msgid7",
+		"msgctxt": false,
+		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/gettextPHP_0.php:17"
+	}
+}
