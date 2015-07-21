@@ -25,7 +25,16 @@ var ParserManager = (function () {
     };
     ParserManager.prototype.addEntryToLocales = function (entry) {
         for (var i = 0; i < this.opt.output.length; i++) {
-            this.locales[this.opt.output[i]][entry.msgid] = entry;
+            var key = entry.msgid;
+            if (entry.msgctxt) {
+                key += this.opt.contextSeparator + entry.msgctxt;
+            }
+            if (entry.msgid_plural) {
+                this.locales[this.opt.output[i]][key] = entry;
+            }
+            else {
+                this.locales[this.opt.output[i]][key] = entry.msgstr;
+            }
         }
     };
     ParserManager.prototype.saveLocales = function () {

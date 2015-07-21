@@ -7,8 +7,9 @@ import Options = require("../tasks/Options");
 
 // Merge task-specific and/or target-specific options with these defaults.
 var options:Options = new Options("../../");
+console.log(options);
 options.outputDir = "/testFiles/locales/";
-options.builtInParser = "gettextPHP";
+options.builtInParser = "wordpress";
 options.output = [
     'en.json',
     'es.json'
@@ -21,7 +22,8 @@ pm.setGrunt(grunt);
 pm.setOptions(options);
 
 // add filPath and pass them to the translation strings extractor.
-pm.addFile(__dirname+"/../../testFiles/gettextPHP_0.php");
+//pm.addFile(__dirname+"/../../testFiles/gettext.php");
+pm.addFile(__dirname+"/../../testFiles/wordpress.php");
 
 pm.save();
 

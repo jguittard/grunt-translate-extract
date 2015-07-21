@@ -61,6 +61,13 @@ class Options{
 
 
     /**
+     * When context is defined the msqid = msgid+contextSeparator+msgcntxt;
+     * @type {string}
+     */
+    contextSeparator:string = "\u0004";
+
+
+    /**
      * Creates a default options object.
      * @param relPath
      */

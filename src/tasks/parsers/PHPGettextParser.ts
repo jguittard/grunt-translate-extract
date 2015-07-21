@@ -50,7 +50,6 @@ class PHPGettextParser implements Parser{
      * @return TranslateEntry.
      */
     parseMatch(match:RegExpExecArray,regExp:RegExp):TranslateEntry{
-        var x = (this.gettext.source === regExp.source);
         var key=null,text=null,plural=null,context=null;
         if(this.gettext.source === regExp.source){
             key = utils.escapeLiteral(match[1]);

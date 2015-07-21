@@ -47,6 +47,17 @@ module.exports = function (grunt) {
                     src: ['testFiles/**/*.php']
                 }
             },
+            other:{
+                options:{
+                    output: [ 'en.json', 'es.json', 'fr.json', 'de.json' ],
+                    outputDir: 'locales',
+                    basePath: 'c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract',
+                    builtInParser: 'gettextPHP',
+                    customParser: null,
+                    errorOnDuplicatedKeys: false,
+                    contextSeparator: '\u0004'
+                }
+            },
             angularTransalte: {
                 options: {
                     locales: [ "en", "es"],

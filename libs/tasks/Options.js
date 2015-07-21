@@ -8,6 +8,7 @@ var Options = (function () {
         this.builtInParser = "gettextPHP";
         this.customParser = null;
         this.errorOnDuplicatedKeys = false;
+        this.contextSeparator = "\u0004";
         this.basePath = path.resolve(path.join(".", relPath));
     }
     return Options;

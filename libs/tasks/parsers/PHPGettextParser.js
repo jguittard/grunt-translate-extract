@@ -15,7 +15,6 @@ var PHPGettextParser = (function () {
         return [this.gettext, this.ngettext, this.dgettext, this.dngettext, this.dcgettext, this.dcngettext];
     };
     PHPGettextParser.prototype.parseMatch = function (match, regExp) {
-        var x = (this.gettext.source === regExp.source);
         var key = null, text = null, plural = null, context = null;
         if (this.gettext.source === regExp.source) {
             key = utils.escapeLiteral(match[1]);
