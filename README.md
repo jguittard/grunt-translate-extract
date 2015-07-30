@@ -10,10 +10,10 @@ Searchs for translatable string in the source code and generate a json file for 
 ## Features
 - **Wordpress:** support all [i10n](https://codex.wordpress.org/L10n) functions, including context and pluralization.
 - **PHP gettext:** support pluralization but not context.
-- **Angular Translate:** support only the translation filter [filters](http://angular-translate.github.io/docs/#/guide/04_using-translate-filter) ie: `<ANY>{{ TRANSLATION_ID | translate }}</ANY>`
-- You can edit (translate) directly the generated files, modified values (translations) will be preserved after run the task multiple times.
+- **Angular Translate:** support only translation  [filters](http://angular-translate.github.io/docs/#/guide/04_using-translate-filter) ie: `<ANY>{{ TRANSLATION_ID | translate }}</ANY>`
+- You can edit the generated files, modified values (translations) will be preserved after run the task multiple times.
 - Parsers are regular expression based, that means the functionality is very limited. 
-I know ideally it should be implemented with a grammar parser, maybe in a future.
+Ideally it should be implemented with a grammar parser, maybe in a future.
 
 
 ## Getting Started
@@ -59,13 +59,14 @@ grunt.initConfig({
 Type: `String Array`
 Default value: `[ "en", "es" , "fr", "de"]`
 
-Name of the generated files.  FileName = *basePath + outputDir + output[n]*;
+Name of the generated files.  **FileName = *basePath + outputDir + output[n]**
 
 #### options.outputDir
 Type: `String`
 Default value: `./output`
 
-Directory where the locale files will be stored. `files.dest` is ignored by this task and can be omitted.
+Directory where the locale files will be stored.   
+`files.dest` is ignored by this task and can be omitted.
 
 
 #### options.basePath
@@ -123,6 +124,6 @@ var AngularTranslateParser = (function () {
 
 
 ## Release History
-0.0.3 Add support for plurals, context, improve documentation. **BREAKIN CHANGES INTRODUCED FROM PREVIOUS VERSION**   
+0.0.3 Add support for plurals, context, improve documentation. **BREAKIN CHANGES INTRODUCED**   
 0.0.2 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.   
 0.0.1 first beta released with support for php gettext , wordpress and angular-translate. no hard test yet.  
