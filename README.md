@@ -97,14 +97,10 @@ Default value: `null`
 
 If there is no Built In Parser that match the language or template that you are using it is posible to define a custom
 parser that matchs and extracts your translatable strings.
-
-
-**DEPRECATION NOTICE: CUSTOM PARSERS ARE WILL BE REMOVED if FUTURE VERSIONS.**... 
-In order to introduce support for plurals and context, 
+**DEPRECATION NOTICE:** *Custom Parsers may be removed in future versions.*. In order to introduce support for plurals and context, 
 The complexity of the parser has increased a lot to support plurals and content, so built custom parsers is not an
-easy task anymore, therefore it makes no sense to support custom parsers
-
-AngularTranslate Parser Example: *matchs <ANY>{{ TRANSLATION_ID | translate }}</ANY>*
+easy task anymore, therefore it makes no sense to support custom parsers....
+**AngularTranslate Parser Example:** *matchs <ANY>{{ TRANSLATION_ID | translate }}</ANY>*
 ```js
 var utils = require("../Utils");
 var AngularTranslateParser = (function () {
