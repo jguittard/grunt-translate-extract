@@ -38,7 +38,7 @@ class Options{
      * Default value = "gettextPHP";
      * @type {string}
      */
-    builtInParser:string = "gettextPHP";
+    builtInParser:string = "wordpress";
 
     /**
      * If there is no default build in parsing matching your requirements you write your custom parser.

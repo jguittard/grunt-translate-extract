@@ -4,7 +4,16 @@
 Searchs for translatable string in the source code and generate a json file for each language.
 
 
+![code generation](https://raw.githubusercontent.com/M-jerez/grunt-translate-extract/master/docs/intro.png)
 
+
+## Features
+- **Wordpress:** support all [i10n](https://codex.wordpress.org/L10n) functions, including context and pluralization.
+- PHP gettext: support pluralization but not context.
+- Angular Translate: support only the translation filter [filters](http://angular-translate.github.io/docs/#/guide/04_using-translate-filter) ie: `<ANY>{{ TRANSLATION_ID | translate }}</ANY>`
+- You can edit (translate) directly the generated files, modified values will be preserved after run the task multiple times.
+- Parsers are regular expression based, that means the functionality is very limited. 
+Ideally it should be implemented with a grammar parser.
 
 
 ## Getting Started
@@ -19,20 +28,21 @@ Enabled inside your Gruntfile with this line of JavaScript:
 grunt.loadNpmTasks('grunt-translate-extract');
 ```
 
-## The "translate_extract" task
-
 
 
 ### Overview
 In your project's Gruntfile, add a section named `translate_extract` to the data object passed into `grunt.initConfig()`.
 
 ```js
+var path = require("path");
+
 grunt.initConfig({
   translate_extract: {
     options: {
-      output: [ "en", "es" , "fr", "de"],
+      output: [ 'en.json', 'es.json', 'fr.json', 'de.json'],
       outputDir: "./output",
-      builtInParser: "gettextPHP",
+      basePath: optional //Just in case the basePath is not the root of the project.
+      builtInParser: "wordpress",
       customParser: null,
       errorOnDuplicatedKeys: true
     },
@@ -49,13 +59,20 @@ grunt.initConfig({
 Type: `String Array`
 Default value: `[ "en", "es" , "fr", "de"]`
 
-An Array of the languages or 'output' to use .
+Name of the generated files.  FileName = *basePath + outputDir + output[n]*;
 
 #### options.outputDir
 Type: `String`
 Default value: `./output`
 
 Directory where the locale files will be stored. `files.dest` is ignored by this task and can be omitted.
+
+
+#### options.basePath
+Type: `String`
+Default value: `./output`
+
+Optional parameter. Use just in case the basePath is not the root of the project.
 
 #### options.errorOnDuplicatedKeys
 Type: `bolean`
@@ -66,7 +83,7 @@ the two string will be considered the same an treated as a single entry .
 
 #### options.builtInParser
 Type: `String`
-Default value: `gettextPHP`
+Default value: `wordpress`
 
 The parser used to match the translation strings.
 List of built in parser
@@ -80,81 +97,36 @@ Default value: `null`
 
 If there is no Built In Parser that match the language or template that you are using it is posible to define a custom
 parser that matchs and extracts your translatable strings.
-`options.customParser` must be an object and implement the methods `getRegexpList()` and `parseMatch()` methods, see the
-interface declaration written in typescript.
-
-```ts
-/**
- * Implements this interface to create a parser to match and extract translatable string.
- */
-interface Parser{
-
-    /**
-     * Returns a list of regular expression that delimits each TranslationEntry.
-     * @return RegExp[] ie:[/\[\[.+\]\]/g, /\{\{(.+?)\}\}/g]
-     */
-    getRegexpList():RegExp[];
 
 
-    /**
-     * Gets the raw text of one TranslationEntry and return its msgid and msgstr.
-     * ie: gets "title : this is the title" and returns a new TranslationEntry{msgid:"title",msgstr:"this is the title"}.
-     * @param filename current file name.
-     * @param lineNum current line number.
-     * @param msgstr the raw msgstr of the translate entry.
-     * @return TranslationEntry.
-     */
-    parseMatch(match:RegExpExecArray):TranslateEntry;
+**DEPRECATION NOTICE: CUSTOM PARSERS ARE WILL BE REMOVED if FUTURE VERSIONS.**... 
+In order to introduce support for plurals and context, 
+The complexity of the parser has increased a lot to support plurals and content, so built custom parsers is not an
+easy task anymore, therefore it makes no sense to support custom parsers
 
-
-}
-```
-
-
-### Usage Examples
-
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
+AngularTranslate Parser Example: *matchs <ANY>{{ TRANSLATION_ID | translate }}</ANY>*
 ```js
-grunt.initConfig({
-  translate_extract: {
-    options: {
-      output: [ "en", "es" , "fr", "de"],
-      outputDir: "./output",
-      builtInParser: "gettextPHP",
-      customParser: null,
-      errorOnDuplicatedKeys: true
-    },
-    files: {
-      src: ["src/**/*.php"]
+var utils = require("../Utils");
+var AngularTranslateParser = (function () {
+    function AngularTranslateParser() {
     }
-  }
-});
+    AngularTranslateParser.prototype.getRegexpList = function () {
+        return [/\{\{\s*([a-zA-Z_]+[a-zA-Z0-9_]*)\s*\|\s*translate\s*\}\}/g];
+    };
+    AngularTranslateParser.prototype.parseMatch = function (match, regExp) {
+        var text = utils.escapeLiteral(match[1]);
+        if (text === false)
+            text = match[1];
+        return { msgid: text, msgstr: text, msgid_plural: null, msgctxt: null, line: null };
+    };
+    AngularTranslateParser._asd = "";
+    return AngularTranslateParser;
+})();
 ```
 
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
 
-```js
-grunt.initConfig({
-  translate_extract: {
-    options: {
-      output: [ "en", "es"],
-      outputDir: "./output",
-      builtInParser: "angularTranslate",
-      errorOnDuplicatedKeys: false
-    },
-    files: {
-      src: ["src/**/*.js"]
-    }
-  }
-});
-```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+0.0.3 Add support for plurals, context, improve documentation. **BREAKIN CHANGES INTRODUCED FROM PREVIOUS VERSION**
 0.0.1 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.
 0.0.1 first beta released with support for php gettext , wordpress and angular-translate. no hard test yet.

@@ -1,12 +1,12 @@
 {
-	"Hello World!": null,
+	"Hello World!": "hello",
 	"Some text to translate and display.": null,
 	"%s star": {
 		"msgid": "%s star",
 		"msgstr": null,
 		"msgid_plural": "%s stars",
 		"msgctxt": null,
-		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/wordpress.php:4"
+		"line": "# testFiles/wordpress.php:4"
 	},
 	"Read\u0004past participle: books I have read": null,
 	"one file\u0004a file in a computer system": {
@@ -14,6 +14,6 @@
 		"msgstr": null,
 		"msgid_plural": "%d files",
 		"msgctxt": "a file in a computer system",
-		"line": "# c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract\\libs\\test/../../testFiles/wordpress.php:8"
+		"line": "# testFiles/wordpress.php:8"
 	}
 }

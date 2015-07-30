@@ -30,7 +30,7 @@ class AngularTranslateParser implements Parser{
         var text = utils.escapeLiteral(match[1]);
         if(text === false)
             text = match[1];
-        return {msgid:text,msgstr:text,msgid_plural:null,msgctxt:null,line:null};
+        return {msgid:text,msgstr:null,msgid_plural:null,msgctxt:null,line:null};
     }
 }
 

@@ -12,5 +12,4 @@
 /// <reference path="../parsers/PHPGettextParser.ts" />
 /// <reference path="../parsers/WordpressParser.ts" />
 /// <reference path="../translate_extract.ts" />
-/// <reference path="../../test/test.ts" />
 //grunt-end

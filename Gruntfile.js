@@ -9,7 +9,6 @@
 'use strict';
 
 module.exports = function (grunt) {
-
     // Project configuration.
     grunt.initConfig({
 
@@ -31,6 +30,12 @@ module.exports = function (grunt) {
                 reference:"src/tasks/def/translate-extract.d.ts",
                 src: ["src/**/*.ts"],
                 outDir:"libs/"
+            },
+            tasks:{
+                sourceMap: false,
+                reference:"src/tasks/def/translate-extract.d.ts",
+                src: ["src/tasks/**/*.ts"],
+                outDir:"tasks/"
             }
         },
 
@@ -38,35 +43,35 @@ module.exports = function (grunt) {
         translate_extract: {
             getextPhp: {
                 options:  {
-                    locales: [ "en", "es"],
-                    outputDir: "testFiles/locales/gettextPHP",
+                    output: [ "php_en.json", "php_es.json"],
+                    outputDir: "testFiles/locales/",
                     builtInParser: "gettextPHP",
                     errorOnDuplicatedKeys: true
                 },
                 files: {
-                    src: ['testFiles/**/*.php']
+                    src: ['testFiles/gettext.php']
                 }
             },
-            other:{
+            wordpress:{
                 options:{
-                    output: [ 'en.json', 'es.json', 'fr.json', 'de.json' ],
-                    outputDir: 'locales',
-                    basePath: 'c:\\Users\\Ma jerez\\Projects\\grunt-translate-extract',
-                    builtInParser: 'gettextPHP',
-                    customParser: null,
-                    errorOnDuplicatedKeys: false,
-                    contextSeparator: '\u0004'
+                    output: [ 'wp_en.json', 'wp_es.json', 'wp_fr.json', 'wp_de.json' ],
+                    outputDir: 'testFiles/locales/',
+                    builtInParser: 'wordpress',
+                    errorOnDuplicatedKeys: false
+                },
+                files: {
+                    src: ['testFiles/wordpress.php']
                 }
             },
             angularTransalte: {
                 options: {
-                    locales: [ "en", "es"],
-                    outputDir: "testFiles/locales/angularTranslate",
+                    output: [ "ng_en.json", "ng_es.json"],
+                    outputDir: "testFiles/locales/",
                     builtInParser: "angularTranslate",
                     errorOnDuplicatedKeys: true
                 },
                 files: {
-                    src: ["testFiles/**/*.html"]
+                    src: ["testFiles/angularTranslate.html"]
                 }
             }
         },
@@ -91,6 +96,9 @@ module.exports = function (grunt) {
 
     });
 
+
+    // Actually load this plugin's task(s).
+    grunt.loadTasks('tasks');
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-clean');

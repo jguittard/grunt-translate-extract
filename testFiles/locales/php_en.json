@@ -1,0 +1,40 @@
+{
+	"msgid": "hello",
+	"hi | this is the text": null,
+	"what": null,
+	"what2": null,
+	"del": null,
+	"single'scaped": null,
+	"double\"scaped": null,
+	"single\\'unscaped": null,
+	"double\\\"unescaped": null,
+	"File": {
+		"msgid": "File",
+		"msgstr": null,
+		"msgid_plural": "Files",
+		"msgctxt": null,
+		"line": "# testFiles/gettext.php:22"
+	},
+	"Labe2\u0004module2": null,
+	"$msgid1": {
+		"msgid": "$msgid1",
+		"msgstr": null,
+		"msgid_plural": "string $msgid3",
+		"msgctxt": false,
+		"line": "# testFiles/gettext.php:16"
+	},
+	"$msgid9": {
+		"msgid": "$msgid9",
+		"msgstr": null,
+		"msgid_plural": "string $msgid7",
+		"msgctxt": false,
+		"line": "# testFiles/gettext.php:17"
+	},
+	"there is one file": {
+		"msgid": "there is one file",
+		"msgstr": null,
+		"msgid_plural": "there are %d files",
+		"msgctxt": false,
+		"line": "# testFiles/gettext.php:21"
+	}
+}
