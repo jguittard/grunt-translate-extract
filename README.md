@@ -96,13 +96,11 @@ Type: `Object`
 Default value: `null`
 
 If there is no Built In Parser that match the language or template that you are using it is posible to define a custom
-parser that matchs and extracts your translatable strings.
-
+parser that matchs and extracts your translatable strings.   
 **DEPRECATION NOTICE:** *Custom Parsers may be removed in future versions.*. In order to introduce support for plurals 
 and context. The complexity of the parser has increased a lot to support plurals and content, so built custom parsers 
-is not an easy task anymore, therefore it makes no sense to support custom parsers.
-
-**AngularTranslate Parser Example:** *matchs <ANY>{{ TRANSLATION_ID | translate }}</ANY>*
+is not an easy task anymore, therefore it makes no sense to support custom parsers.   
+**AngularTranslate Parser Example:** *matchs <ANY>{{ TRANSLATION_ID | translate }}</ANY>*   
 ```js
 var utils = require("../Utils");
 var AngularTranslateParser = (function () {
@@ -125,6 +123,6 @@ var AngularTranslateParser = (function () {
 
 
 ## Release History
-0.0.3 Add support for plurals, context, improve documentation. **BREAKIN CHANGES INTRODUCED FROM PREVIOUS VERSION**
-0.0.2 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.
-0.0.1 first beta released with support for php gettext , wordpress and angular-translate. no hard test yet.
+0.0.3 Add support for plurals, context, improve documentation. **BREAKIN CHANGES INTRODUCED FROM PREVIOUS VERSION**   
+0.0.2 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.   
+0.0.1 first beta released with support for php gettext , wordpress and angular-translate. no hard test yet.  
