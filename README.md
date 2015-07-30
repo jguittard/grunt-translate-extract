@@ -9,11 +9,11 @@ Searchs for translatable string in the source code and generate a json file for 
 
 ## Features
 - **Wordpress:** support all [i10n](https://codex.wordpress.org/L10n) functions, including context and pluralization.
-- PHP gettext: support pluralization but not context.
-- Angular Translate: support only the translation filter [filters](http://angular-translate.github.io/docs/#/guide/04_using-translate-filter) ie: `<ANY>{{ TRANSLATION_ID | translate }}</ANY>`
-- You can edit (translate) directly the generated files, modified values will be preserved after run the task multiple times.
+- **PHP gettext:** support pluralization but not context.
+- **Angular Translate:** support only the translation filter [filters](http://angular-translate.github.io/docs/#/guide/04_using-translate-filter) ie: `<ANY>{{ TRANSLATION_ID | translate }}</ANY>`
+- You can edit (translate) directly the generated files, modified values (translations) will be preserved after run the task multiple times.
 - Parsers are regular expression based, that means the functionality is very limited. 
-Ideally it should be implemented with a grammar parser.
+I know ideally it should be implemented with a grammar parser, maybe in a future.
 
 
 ## Getting Started
@@ -30,7 +30,7 @@ grunt.loadNpmTasks('grunt-translate-extract');
 
 
 
-### Overview
+## Overview
 In your project's Gruntfile, add a section named `translate_extract` to the data object passed into `grunt.initConfig()`.
 
 ```js
@@ -53,7 +53,7 @@ grunt.initConfig({
 });
 ```
 
-### Options
+## Options
 
 #### options.output
 Type: `String Array`
@@ -128,5 +128,5 @@ var AngularTranslateParser = (function () {
 
 ## Release History
 0.0.3 Add support for plurals, context, improve documentation. **BREAKIN CHANGES INTRODUCED FROM PREVIOUS VERSION**
-0.0.1 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.
+0.0.2 print number of files parsed and found translation entries. add a new `gettextPHP_KV` parser.
 0.0.1 first beta released with support for php gettext , wordpress and angular-translate. no hard test yet.
