@@ -1,7 +1,9 @@
 # grunt-translate-extract
 
-`grunt-translate-extract` helps developers with the internationalization off their code. It search for translatable
-string in the source code and generate a json file for each language.
+`grunt-translate-extract` helps developers with the internationalization off their code. 
+Searchs for translatable string in the source code and generate a json file for each language.
+
+
 
 
 
